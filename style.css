@@ -46,17 +46,15 @@ h1 {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 8px;
+    grid-gap: .7em;
 }
 
 .leader {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    padding-top: 100%;
     background-size: cover;
     background-position: center top;
     box-shadow: 1px 1px 4px rgba(0,0,0);
-    margin-bottom: 8px;
     transition: transform 200ms ease-out;
     text-align: center;
     position: relative;
