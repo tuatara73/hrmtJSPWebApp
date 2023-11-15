@@ -27,6 +27,19 @@ const list = [
     image:
       "https://nu.cw/wp-content/uploads/2023/07/politie-zoekt-ex-militair-die-belgische-premier-online-met-dood-bedreigde.jpg",
   },
+  {
+    name: "Xi Jinping",
+    country: "China",
+    denounced: false,
+    image:
+      "https://styles.redditmedia.com/t5_3wpa92/styles/profileIcon_udclb3k9yid71.jpg?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=d1d5b53ff8072192aadb7b983c0c6da895e7a50d",
+  },
+  {
+    name: "Nikos Christodoulides",
+    country: "Cyprus",
+    denounced: true,
+    image: "img/cyprus.jpg",
+  },
 ];
 
 export default list;

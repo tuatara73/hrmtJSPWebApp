@@ -1,11 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: #222;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+main, h1 {
     max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    background: #e5007e;
+    color: White;
+    margin-bottom: 1em;
+}
+
+main, header {
+    padding: 4px 24px;
+}
+
+.black {
+    color: black;
 }
 
 h1 {
@@ -13,20 +32,31 @@ h1 {
     font-size: 24px;
 }
 
+#video {
+    height: 300px;
+    background: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #leaders {
     list-style: none;
     padding: 0;
-    margin: 0 -8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 8px;
 }
 
 .leader {
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-size: cover;
     background-position: center top;
     box-shadow: 1px 1px 4px rgba(0,0,0);
-    margin: 8px;
+    margin-bottom: 8px;
     transition: transform 200ms ease-out;
     text-align: center;
     position: relative;
@@ -54,7 +84,7 @@ h1 {
     width: 100%;
     margin-top: 4px;
     display: none;
-    font-size: small;
+    font-size: 11px;
     background: rgba(255,255,255, .8);
     padding: 4px;
     box-sizing: border-box;
