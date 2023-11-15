@@ -1,0 +1,64 @@
+body {
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#leaders {
+    list-style: none;
+    padding: 0;
+    margin: 0 -8px;
+}
+
+.leader {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 1px 1px 4px rgba(0,0,0);
+    margin: 8px;
+    transition: transform 200ms ease-out;
+    text-align: center;
+    position: relative;
+}
+
+.leader:hover {
+    box-shadow: 3px 3px 6px rgba(0,0,0,.5);
+    transform: scale(1.1);
+}
+
+.leader:hover .leader-name {
+    display: block;
+
+}
+
+.leader:not([data-denounced]) {
+    filter: grayscale();
+}
+
+.leader-name {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 4px;
+    display: none;
+    font-size: small;
+    background: rgba(255,255,255, .8);
+    padding: 4px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
