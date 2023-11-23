@@ -182,6 +182,7 @@ main {
   transition: transform 200ms ease-out;
   text-align: center;
   position: relative;
+  background-color: White;
 }
 
 .org:hover {
@@ -192,7 +193,7 @@ main {
 }
 
 .org:hover .org-name {
-  display: block;
+  display: flex;
 }
 
 .org:not([data-denounced]) {
@@ -202,17 +203,23 @@ main {
 .org-name {
   font-weight: bold;
   position: absolute;
+  top: 0;
   bottom: 0;
   text-align: center;
   width: 100%;
-  margin-top: 4px;
   display: none;
   font-size: 11px;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--highlight);
   padding: 4px;
   box-sizing: border-box;
   text-overflow: ellipsis;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.org:not([data-denounced]) .org-name {
+  background: var(--dark);
 }
 
 #countdown {
