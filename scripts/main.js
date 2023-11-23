@@ -1,30 +1,32 @@
 import list from "./list.js";
+import { setCountdown } from "./countdown.js";
 
 function main() {
-  const containerEl = document.querySelector("#leaders");
+  const containerEl = document.querySelector("#orgs");
 
   const fragment = document.createDocumentFragment();
 
-  list.forEach((leader) => {
+  list.forEach((org) => {
     const listItem = document.createElement("li");
-    listItem.style.backgroundImage = `url(${leader.image})`;
-    listItem.className = "leader";
+    listItem.style.backgroundImage = `url(${org.image})`;
+    listItem.className = "org";
 
-    listItem.setAttribute("title", `${leader.name} (${leader.country})`);
-    if (leader.denounced) {
+    listItem.setAttribute("title", `${org.name} (${org.country})`);
+    if (org.denounced) {
       listItem.dataset.denounced = "1";
     }
 
-    const leaderName = document.createElement("span");
-    leaderName.innerHTML = `${leader.name}<br />(${leader.country})`;
-    leaderName.className = "leader-name";
+    const orgName = document.createElement("span");
+    orgName.innerHTML = `${org.name}<br />(${org.country})`;
+    orgName.className = "org-name";
 
-    listItem.appendChild(leaderName);
+    listItem.appendChild(orgName);
     fragment.appendChild(listItem);
   });
 
   containerEl.appendChild(fragment);
+
+  setCountdown();
 }
 
 main();
-N;

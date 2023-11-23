@@ -21,11 +21,29 @@ const list = [
       "https://i0.wp.com/raiagroup.org/wp-content/uploads/2021/03/Luiz-Inacio-Lula-da-Silva.jpg?resize=256%2C256&ssl=1",
   },
   {
+    name: "Emmanuel Macron",
+    country: "France",
+    denounced: true,
+    image: "img/orgs/france.jpg",
+  },
+  {
     name: "Alexander De Croo",
     country: "Belgium",
     denounced: false,
     image:
       "https://nu.cw/wp-content/uploads/2023/07/politie-zoekt-ex-militair-die-belgische-premier-online-met-dood-bedreigde.jpg",
+  },
+  {
+    name: "Nikos Christodoulides",
+    country: "Cyprus",
+    denounced: true,
+    image: "img/orgs/cyprus.jpg",
+  },
+  {
+    name: "Olaf Scholz",
+    country: "Germany",
+    denounced: true,
+    image: "img/orgs/germany.jpg",
   },
   {
     name: "Xi Jinping",
@@ -35,10 +53,36 @@ const list = [
       "https://styles.redditmedia.com/t5_3wpa92/styles/profileIcon_udclb3k9yid71.jpg?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=d1d5b53ff8072192aadb7b983c0c6da895e7a50d",
   },
   {
+    name: "Emmanuel Macron",
+    country: "France",
+    denounced: true,
+    image: "img/orgs/france.jpg",
+  },
+  {
+    name: "Alexander De Croo",
+    country: "Belgium",
+    denounced: false,
+    image:
+      "https://nu.cw/wp-content/uploads/2023/07/politie-zoekt-ex-militair-die-belgische-premier-online-met-dood-bedreigde.jpg",
+  },
+  {
     name: "Nikos Christodoulides",
     country: "Cyprus",
     denounced: true,
-    image: "img/cyprus.jpg",
+    image: "img/orgs/cyprus.jpg",
+  },
+  {
+    name: "Olaf Scholz",
+    country: "Germany",
+    denounced: true,
+    image: "img/orgs/germany.jpg",
+  },
+  {
+    name: "Xi Jinping",
+    country: "China",
+    denounced: false,
+    image:
+      "https://styles.redditmedia.com/t5_3wpa92/styles/profileIcon_udclb3k9yid71.jpg?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=d1d5b53ff8072192aadb7b983c0c6da895e7a50d",
   },
 ];
 
