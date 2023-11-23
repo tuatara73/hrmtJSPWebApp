@@ -36,7 +36,7 @@ const list = [
   },
   {
     name: "AWID2",
-    denounced: false,
+    denounced: true,
     image: "AWID2.png",
   },
   {
